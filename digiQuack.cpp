@@ -383,9 +383,9 @@ string stringprocessor(string key){
 int main(){
 
     //Eye-candy
-    cout<<"  _      _      _";
-    cout<<">(.)__ <(.)__ =(.)__";
-    cout<<" (___/  (___/  (___/";
+    cout<<"  _      _      _"<<endl;
+    cout<<">(.)__ <(.)__ =(.)__"<<endl;
+    cout<<" (___/  (___/  (___/"<<endl;
     cout<<endl;
     cout<<endl;
     cout<<"Welcome to digiQuack, the easy DuckyScript to Digispark payload converter!"<<endl;
