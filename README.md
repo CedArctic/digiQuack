@@ -16,7 +16,7 @@ The converted file will be placed in the scripts' directory and will be named co
 
 
 # Credits and resources:
-Keboard usage IDs: www.usb.org/developers/hidpage/Hut1_12v2.pdf
+Keyboard usage IDs: www.usb.org/developers/hidpage/Hut1_12v2.pdf
 Seytonic's tutorial: https://www.youtube.com/watch?v=fGmGBa-4cYQ
 Kevin Mitnik for pointing out the 'F' improvement: https://www.youtube.com/watch?v=IRSK_DNYL8Q
 hak5darren for the USB Rubber Ducky Documentation: https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Duckyscript
