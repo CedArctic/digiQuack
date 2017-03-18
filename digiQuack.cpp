@@ -382,9 +382,17 @@ string stringprocessor(string key){
 
 int main(){
 
+    //Eye-candy
+    cout<<"  _      _      _";
+    cout<<">(.)__ <(.)__ =(.)__";
+    cout<<" (___/  (___/  (___/";
+    cout<<endl;
+    cout<<endl;
+    cout<<"Welcome to digiQuack, the easy DuckyScript to Digispark payload converter!"<<endl;
+
     //Ask user to enter path to file to be converted
     string dir;
-    cout<<"Enter path of file to be converted:"<<endl;
+    cout<<"Enter the path of the file to be converted:"<<endl;
     cin>>dir;
 
     //Open input file stream
