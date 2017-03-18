@@ -1,7 +1,7 @@
 ![digiQuack logo](/images/logo.png)
 
 # digiQuack
-digiQuack is an easy DuckyScript to DigiSpark payload converter based on C++. It contains various features including full DuckyScript language support, execution limiter, DigiSpark memory optimizations and more. Note though that currently support of foreign keyboard layouts (not english ones is rather spotty, so try it out and see if it works out for yourself). The code is well documented with comments so feel free to take a look for yourself.
+digiQuack is an easy DuckyScript to DigiSpark payload converter based on C++. It contains various features including full DuckyScript language support, execution limiter, DigiSpark memory optimizations and more. Note though that currently support of foreign keyboard layouts (not english ones) is rather spotty, so try it out and see if it works out for yourself. The code is well documented with comments so feel free to take a look for yourself.
 
 # Instructions
 ![screenshot](/images/screenshot.png)
