@@ -6,7 +6,8 @@ using namespace std;
 
 //Function to count the lines of the script to be converted
 int linecounter(string dir){
-    int counter = 0;
+    
+	int counter = 0;
 
     string line;
 
@@ -22,7 +23,6 @@ int linecounter(string dir){
 //Accepts a string and returns the value of the key(s) in digispark language
 //Some of the keys are encoded using their usage IDs. Refer to http://www.usb.org/developers/hidpage/Hut1_12v2.pdf  (Page 53-59)
 string stringprocessor(string key){
-
 
     if((key == "A") || (key == "a")){
         key = "KEY_A";
