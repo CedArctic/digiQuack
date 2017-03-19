@@ -422,7 +422,7 @@ int main(){
     //Create a string variable to store each individual ducky command/line to process in the for loop
     string command;
 
-    //Create a trigger for the default delay command - if default delay command encounter, inject converted script with delay lines
+    //Create a trigger for the default delay command - if default delay command is encountered, inject converted script with delay lines
     int delay = 0;
 
     //Insert this line in the beginning of the converted script to make sure that (on older systems) the first keystroke after a delay isn't missed
@@ -500,7 +500,6 @@ int main(){
             fincom = tmpstring;
             fileout << fincom << "\n";
         }
-
 
         //If default delay trigger is activated, inject output file with a delay command
         if(delay!=0){
