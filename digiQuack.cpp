@@ -24,187 +24,154 @@ int linecounter(string dir){
 //Some of the keys are encoded using their usage IDs. Refer to http://www.usb.org/developers/hidpage/Hut1_12v2.pdf  (Page 53-59)
 string stringprocessor(string key){
 
-    if((key == "A") || (key == "a")){
-        key = "KEY_A";
-        return key;
+    int asciinum;//Case for A and a
+
+    if(key.size() == 1){
+        asciinum = (int)key[0];         //If the string length is 1, use a switch statement to improve speed. In order to do that we need to extract the character number in ascii with this line of code.
+
+        switch(asciinum){
+
+            case 65:
+            case 97:
+                key = "KEY_A";
+                return key;
+            case 66:
+            case 98:
+                key = "KEY_B";
+                return key;
+            case 67:
+            case 99:
+                key = "KEY_C";
+                return key;
+            case 68:
+            case 100:
+                key = "KEY_D";
+                return key;
+            case 69:
+            case 101:
+                key = "KEY_E";
+                return key;
+            case 70:
+            case 102:
+                key = "KEY_F";
+                return key;
+            case 71:
+            case 103:
+                key = "KEY_G";
+                return key;
+            case 72:
+            case 104:
+                key = "KEY_H";
+                return key;
+            case 73:
+            case 105:
+                key = "KEY_I";
+                return key;
+            case 74:
+            case 106:
+                key = "KEY_J";
+                return key;
+            case 75:
+            case 107:
+                key = "KEY_K";
+                return key;
+            case 76:
+            case 108:
+                key = "KEY_L";
+                return key;
+            case 77:
+            case 109:
+                key = "KEY_M";
+                return key;
+            case 78:
+            case 110:
+                key = "KEY_N";
+                return key;
+            case 79:
+            case 111:
+                key = "KEY_O";
+                return key;
+            case 80:
+            case 112:
+                key = "KEY_P";
+                return key;
+            case 81:
+            case 113:
+                key = "KEY_Q";
+                return key;
+            case 82:
+            case 114:
+                key = "KEY_R";
+                return key;
+            case 83:
+            case 115:
+                key = "KEY_S";
+                return key;
+            case 84:
+            case 116:
+                key = "KEY_T";
+                return key;
+            case 85:
+            case 117:
+                key = "KEY_U";
+                return key;
+            case 86:
+            case 118:
+                key = "KEY_V";
+                return key;
+            case 87:
+            case 119:
+                key = "KEY_W";
+                return key;
+            case 88:
+            case 120:
+                key = "KEY_X";
+                return key;
+            case 89:
+            case 121:
+                key = "KEY_Y";
+                return key;
+            case 90:
+            case 122:
+                key = "KEY_Z";
+                return key;
+            case 48:
+                key = "KEY_0";
+                return key;
+            case 49:
+                key = "KEY_1";
+                return key;
+            case 50:
+                key = "KEY_2";
+                return key;
+            case 51:
+                key = "KEY_3";
+                return key;
+            case 52:
+                key = "KEY_4";
+                return key;
+            case 53:
+                key = "KEY_5";
+                return key;
+            case 54:
+                key = "KEY_6";
+                return key;
+            case 55:
+                key = "KEY_7";
+                return key;
+            case 56:
+                key = "KEY_8";
+                return key;
+            case 57:
+                key = "KEY_9";
+                return key;
+            default:
+                cout << "There was a problem in converting the ascii character:" << key << endl;        //In case the character doesn't exist in the switch
+        }
     }
 
-    else if((key == "B") || (key == "b")){
-        key = "KEY_B";
-        return key;
-    }
 
-    else if((key == "C") || (key == "c")){
-        key = "KEY_C";
-        return key;
-    }
-
-    else if((key == "D") || (key == "d")){
-        key = "KEY_D";
-        return key;
-    }
-
-    else if((key == "E") || (key == "e")){
-        key = "KEY_E";
-        return key;
-    }
-
-    else if((key == "F") || (key == "f")){
-        key = "KEY_F";
-        return key;
-    }
-
-    else if((key == "G") || (key == "g")){
-        key = "KEY_G";
-        return key;
-    }
-
-    else if((key == "H") || (key == "h")){
-        key = "KEY_H";
-        return key;
-    }
-
-    else if((key == "I") || (key == "i")){
-        key = "KEY_I";
-        return key;
-    }
-
-    else if((key == "J") || (key == "j")){
-        key = "KEY_J";
-        return key;
-    }
-
-    else if((key == "K") || (key == "k")){
-        key = "KEY_K";
-        return key;
-    }
-
-    else if((key == "L") || (key == "l")){
-        key = "KEY_L";
-        return key;
-    }
-
-    else if((key == "M") || (key == "m")){
-        key = "KEY_M";
-        return key;
-    }
-
-    else if((key == "N") || (key == "n")){
-        key = "KEY_N";
-        return key;
-    }
-
-    else if((key == "O") || (key == "o")){
-        key = "KEY_O";
-        return key;
-    }
-
-    else if((key == "P") || (key == "p")){
-        key = "KEY_P";
-        return key;
-    }
-
-    else if((key == "Q") || (key == "q")){
-        key = "KEY_Q";
-        return key;
-    }
-
-    else if((key == "R") || (key == "r")){
-        key = "KEY_R";
-        return key;
-    }
-
-    else if((key == "S") || (key == "s")){
-        key = "KEY_S";
-        return key;
-    }
-
-    else if((key == "T") || (key == "t")){
-        key = "KEY_T";
-        return key;
-    }
-
-    else if((key == "U") || (key == "u")){
-        key = "KEY_U";
-        return key;
-    }
-
-    else if((key == "V") || (key == "v")){
-        key = "KEY_V";
-        return key;
-    }
-
-    else if((key == "W") || (key == "w")){
-        key = "KEY_W";
-        return key;
-    }
-
-    else if((key == "X") || (key == "x")){
-        key = "KEY_X";
-        return key;
-    }
-
-    else if((key == "Y") || (key == "y")){
-        key = "KEY_Y";
-        return key;
-    }
-
-    else if((key == "Z") || (key == "z")){
-        key = "KEY_Z";
-        return key;
-    }
-
-    else if(key=="1"){
-        key = "KEY_1";
-        return key;
-    }
-
-    else if(key=="2"){
-        key = "KEY_2";
-        return key;
-    }
-
-    else if(key=="3"){
-        key = "KEY_3";
-        return key;
-    }
-
-    else if(key=="4"){
-        key = "KEY_4";
-        return key;
-    }
-
-    else if(key=="5"){
-        key = "KEY_5";
-        return key;
-    }
-
-    else if(key=="6"){
-        key = "KEY_6";
-        return key;
-    }
-
-    else if(key=="7"){
-        key = "KEY_7";
-        return key;
-    }
-
-    else if(key=="8"){
-        key = "KEY_8";
-        return key;
-    }
-
-    else if(key=="9"){
-        key = "KEY_9";
-        return key;
-    }
-
-    else if(key=="0"){
-        key = "KEY_0";
-        return key;
-    }
-
-    else if(key=="ENTER"){
+    if(key=="ENTER"){
         key = "KEY_ENTER";
         return key;
     }
@@ -492,7 +459,7 @@ int main(){
             key = command.substr(0, command.find(' '));
             tmpstring = "DigiKeyboard.sendKeyStroke(" + stringprocessor(key);
             command.erase(0, command.find(' ')+1);
-            if(!command.empty()){
+            if(!command.empty() && command != key){         //If command is equal to key it means that the command is a one word line e.g ENTER so command.erase until a ' ' would have no effect.
                 tmpstring = tmpstring + ",";
                 tmpstring = tmpstring + stringprocessor(command);
             }
