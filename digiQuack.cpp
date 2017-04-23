@@ -6,7 +6,7 @@ using namespace std;
 
 //Function to count the lines of the script to be converted
 int linecounter(string dir){
-    
+
 	int counter = 0;
 
     string line;
@@ -275,7 +275,7 @@ string stringprocessor(string key){
     }
 
     else if((key=="APP") || (key=="MENU")){
-        key = "101"; //Doesn't work without the 0, for some reason
+        key = "101";
         return key;
     }
 
@@ -290,92 +290,92 @@ string stringprocessor(string key){
     }
 
     else if((key=="CONTROL") || (key=="CTRL")){
-        key = "MOD_CONTROL_LEFT"; //Doesn't work without the 0, for some reason
+        key = "MOD_CONTROL_LEFT";
         return key;
     }
 
     else if((key=="DOWNARROW") || (key=="DOWN")){
-        key = "84"; //Doesn't work without the 0, for some reason
-        return key;
-    }
-
-    else if((key=="UPARROW") || (key=="UP")){
-        key = "83"; //Doesn't work without the 0, for some reason
-        return key;
-    }
-
-    else if((key=="LEFTARROW") || (key=="LEFT")){
-        key = "79"; //Doesn't work without the 0, for some reason
-        return key;
-    }
-
-    else if((key=="RIGHTARROW") || (key=="RIGHT")){
-        key = "89"; //Doesn't work without the 0, for some reason
-        return key;
-    }
-
-    else if((key=="BREAK") || (key=="PAUSE")){
-        key = "126"; //Doesn't work without the 0, for some reason
-        return key;
-    }
-
-    else if(key=="CAPSLOCK"){
-        key = "30";
-        return key;
-    }
-
-    else if((key=="ESC") || (key=="ESCAPE")){
-        key = "110";
-        return key;
-    }
-
-    else if(key=="DELETE"){
-        key = "15";
-        return key;
-    }
-
-    else if(key=="END"){
         key = "81";
         return key;
     }
 
-    else if(key=="HOME"){
+    else if((key=="UPARROW") || (key=="UP")){
+        key = "82";
+        return key;
+    }
+
+    else if((key=="LEFTARROW") || (key=="LEFT")){
         key = "80";
         return key;
     }
 
+    else if((key=="RIGHTARROW") || (key=="RIGHT")){
+        key = "79";
+        return key;
+    }
+
+    else if((key=="BREAK") || (key=="PAUSE")){
+        key = "72";
+        return key;
+    }
+
+    else if(key=="CAPSLOCK"){
+        key = "57";
+        return key;
+    }
+
+    else if((key=="ESC") || (key=="ESCAPE")){
+        key = "41";
+        return key;
+    }
+
+    else if(key=="DELETE"){
+        key = "42";
+        return key;
+    }
+
+    else if(key=="END"){
+        key = "77";
+        return key;
+    }
+
+    else if(key=="HOME"){
+        key = "74";
+        return key;
+    }
+
     else if(key=="NUMLOCK"){
-        key = "90";
+        key = "83";
         return key;
     }
 
     else if(key=="PAGEUP"){
-        key = "85";
+        key = "75";
         return key;
     }
 
     else if(key=="PAGEDOWN"){
-        key = "86";
+        key = "78";
         return key;
     }
 
     else if(key=="PRINTSCREEN"){
-        key = "124";
+        key = "70";
         return key;
     }
 
     else if(key=="SCROLLLOCK"){
-        key = "125";
+        key = "71";
         return key;
     }
 
     else if(key=="SPACE"){
-        key = "61";
+        key = "44";
         return key;
     }
 
     else if(key=="TAB"){
-        key = "16";
+        key = "43";
         return key;
     }
 }
