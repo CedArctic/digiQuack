@@ -480,7 +480,7 @@ int main(){
     cin >> counter;
 
     if(counter){
-        fileout << "exit();";
+        fileout << "for(;;){ /*empty*/ }";
     }
 
     //Close converted script txt fstream
