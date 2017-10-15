@@ -13,8 +13,11 @@ Just download one of the releases or download the source (digiQuack.cpp) and com
 
 >Windows users: Run the digiQuack.exe. Drag and drop the txt file with the payload you want to convert and follow the prompt.
 
-The converted file will be placed in the scripts' directory and will be named converted.txt. You can then follow seytonic's tutorial (in the credits) to install it on your digispark.
+The converted file will be placed in the scripts' directory (or for macOS under the user directory) and will be named converted.txt. You can then follow seytonic's tutorial (in the credits) to install it on your digispark.
 
+Video Tutorial on using the tool:
+
+[![Convert Ducky Scripts to Digispark](https://img.youtube.com/vi/YXWxEzLHXuw/0.jpg)](https://www.youtube.com/watch?v=YXWxEzLHXuw)
 
 # Downloads
 
