@@ -23,6 +23,10 @@ The converted file will be placed in the scripts' directory (or for macOS under 
 
 See the releases page to get the latest version: https://github.com/CedArctic/digiQuack/releases/ 
 
+# Digispark Scripts
+
+In case you want to play around with some of my Digispark scripts, you can find them here:
+>https://github.com/CedArctic/DigiSpark-Scripts
 
 # Credits and resources:
 Keyboard usage IDs: www.usb.org/developers/hidpage/Hut1_12v2.pdf
