@@ -1,0 +1,61 @@
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #f4f4f4;
+	color: #555;
+	font-size: 16px;
+	margin: 0;
+	line-height: 1.6em;
+	text-align: center;
+}
+
+a{
+	text-decoration: none;
+	color:inherit;
+}
+
+.navbar{
+	background-color: black;
+	margin: none;
+	padding: 10px;
+	width: 100%;
+	height: auto;
+	line-height: 0.5em;
+	font-size: 18px;
+}
+
+.navbar h1{
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.about{
+	text-align: center;
+}
+
+.container{
+	width: 75%;
+	margin: auto;
+	overflow: hidden;
+}
+
+textarea{
+	width: 100%;
+	font-size: 14px;
+	height: auto;
+}
+
+button{
+	font-size: 18px;
+	padding: 5px;
+	border-radius: 5px;
+	margin: 10px;
+	border-width: 0px;
+	background-color: #c9ccd1;
+}
+
+img{
+	height:auto;
+	width: auto;
+	max-width: 80px;
+	max-height: 80px;
+	margin: 10px;
+}
