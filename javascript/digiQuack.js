@@ -75,7 +75,7 @@ function convert(){
 		}else if (duckyScript[line].slice(0,5) == "DELAY"){
 			previousStatement = "\tDigiKeyboard.delay(" + parseInt(duckyScript[line].slice(6)) + ");";
 		}else if (duckyScript[line].slice(0,6) == "STRING") {
-			previousStatement = "\tDigiKeyboard.print(\"" + duckyScript[line].slice(7).replace("\\", "\\\\").replace("\"", "\\\"") + "\");";
+			previousStatement = "\tDigiKeyboard.print(\"" + duckyScript[line].slice(7).replaceAll("\\", "\\\\").replaceAll("\"", "\\\"") + "\");";
 		}else if (duckyScript[line].slice(0,6) == "REPEAT"){
 			var repetitions = parseInt(duckyScript[line].slice(7)) - 1;
 			for (i = 0; i < repetitions; i++){
